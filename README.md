@@ -11,20 +11,20 @@
 该系统功能完善，界面美观，非常适合作为毕设或者课程作业以及新手开发学习。<br>
 
 ## 功能介绍
-<img src="./images/gn.png" width="600" height="400" /><br>
+<img src="./images/gn.png" width="550" height="400" /><br>
 
 ## 技术服务
 <img src="./images/my.jpg" width="200" height="200" />
 
 ## 系统图片
 #### 1.小程序首页
-<img src="./images/1.jpg" width="300" height="600" /><br>
+<img src="./images/1.jpg" width="260" height="600" /><br>
 #### 2.座位预约
-<img src="./images/2.jpg" width="300" height="600" /><br>
+<img src="./images/2.jpg" width="260" height="600" /><br>
 #### 3.查看预约详情
-<img src="./images/3.jpg" width="300" height="600" /><br>
+<img src="./images/3.jpg" width="260" height="600" /><br>
 #### 4.小程序我的页面
-<img src="./images/4.jpg" width="300" height="600" /><br>
+<img src="./images/4.jpg" width="260" height="600" /><br>
 #### 5.后台管理端登录页
 <img src="./images/5.jpg" width="600" height="300" /><br>
 #### 6.座位管理
