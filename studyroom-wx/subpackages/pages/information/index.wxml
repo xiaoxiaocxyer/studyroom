@@ -1,0 +1,56 @@
+<view class="section centered">
+  <view class="fill_form">
+      <view class="from_image">
+        <view>头像</view>
+        <view class="img_border">
+          <image src="{{ dataFrom.userImg || 'https://s1.ax1x.com/2023/02/03/pSsaIPI.png'}}" class="img"/>
+        </view>
+      </view>
+
+      <view class="fill_data">
+        <view>姓名</view>
+        <!-- <view wx:if="{{ dataFrom.username }}"></view> -->
+        <view>
+          <input type="text" class="weui-input" placeholder="请输入姓名" value="{{ dataFrom.name }}" data-sign="name" bindinput="onChange"/>
+        </view>
+      </view>
+
+      <view class="fill_data">
+        <view>手机号</view>
+        <!-- <view wx:if="{{ dataFrom.username }}"></view> -->
+        <view>
+          <input type="text" class="weui-input" placeholder="请输入手机号" value="{{ dataFrom.mobile }}" data-sign="mobile" bindinput="onChange"/>
+        </view>
+      </view>
+
+      <view class="fill_data">
+        <view>QQ</view>
+        <!-- <view wx:if="{{ fromShow }}">1108756743</view> -->
+        <view>
+          <input type="text" class="weui-input" placeholder="请输入QQ" value="{{ dataFrom.qq }}" data-sign="qq" bindinput="onChange"/>
+        </view>
+      </view>
+
+      <view class="fill_data">
+        <view>邮箱</view>
+        <!-- <view wx:if="{{ fromShow }}">1108756743@163.com</view> -->
+        <view>
+          <input type="text" class="weui-input" placeholder="请输入邮箱" value="{{ dataFrom.email }}" data-sign="email" bindinput="onChange"/>
+        </view>
+      </view>
+
+      <view class="fill_remarks">
+        <view>备注</view>
+        <!-- <view wx:if="{{ fromShow }}">1108756743@163.com</view> -->
+        <view >
+          <textarea name="textarea" class="weui-textarea" minlength="{{min}}" maxlength="{{max}}" value="{{dataFrom.bz}}" placeholder-class="phcolor" bindinput="inputeExplain" data-obj="dataFrom.autograph">
+            <text class="currentWordNumber">{{currentWordNumber|0}}/{{max}}</text>
+          </textarea>
+        </view>
+      </view>
+  </view>
+
+  <view class="btn">
+    <van-button type="primary" color="#1C8FFA" block bindtap="regionCheck">提 交</van-button>
+  </view>
+</view>

@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "van-field": "/libs/vant-ui/field/index",
+    "van-button": "/libs/vant-ui/button/index"
+  },
+  "navigationBarTitleText": "新建留言"
+}

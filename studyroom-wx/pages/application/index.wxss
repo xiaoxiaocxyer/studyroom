@@ -1,0 +1,86 @@
+.make {
+  /* padding-top: 20rpx; */
+}
+/* .header_title {
+  margin-left: 6rpx;
+  height: 80rpx;
+  line-height: 80rpx;
+}
+.header_title::before {
+  display: inline-block;
+  position: relative;
+  top: 3px;
+  left: -3px;
+  content: "";
+  padding: 0 2px;
+  height: 33rpx;
+  border-radius: 2px;
+  background: #1C8FFA;
+} */
+.make_centered {
+  width: 100%;
+  margin-top: 20rpx;
+}
+.make_hader {
+  text-align: center;
+  line-height: 40rpx;
+  width: 100%;
+  height: 40rpx;
+  background: rgba(71, 172, 147, 0.318);
+  border-radius: 25rpx 25rpx 0rpx 0rpx;
+}
+.make_section {
+  position: relative;
+  height: 300rpx;
+  background: #ffffff;
+  padding: 25rpx 20rpx 20rpx 20rpx;
+  line-height: 60rpx;
+  font-size: 32rpx;
+}
+.make_fromPhone {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.make_tag {
+  display: inline-block;
+  padding: 0 20rpx 0 20rpx;
+  margin-right: 15rpx;
+  height: 50rpx;
+  color: white;
+  border-radius: 10rpx;
+  font-size: 25rpx;
+  text-align: center;
+  line-height: 50rpx;
+}
+.city {
+  background: #1C8FFA;
+}
+.room {
+  background: #1ca9fa;
+}
+.seat {
+  background: #1ccafa;
+}
+
+.make_fromTime {
+  margin-top: 20rpx;
+  font-size: 28rpx;
+}
+.make_item {
+  font-size: 24rpx;
+  position: absolute;
+  right: 10rpx;
+  bottom: 3rpx;
+  color: #1C8FFA;
+  
+}
+
+.cancel {
+  width: 100%;
+  height: 400rpx;
+}
+#van-dialog {
+  width: 100%;
+  height: 100%;
+}

@@ -1,0 +1,59 @@
+@import "../../../static/ali-icon/index.wxss";
+.section {
+
+}
+.function_type {
+  padding-top: 20rpx;
+  padding-bottom: 40rpx;
+  background: #ffffff;
+  margin-top: 20rpx;
+}
+.function_title {
+  height: 50rpx;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  color: #888;
+}
+
+.function_choice {
+  display: flex;
+  flex-direction: row;
+  margin-top: 25rpx;
+}
+.choice_title {
+  padding: 0 30rpx 0 30rpx;
+  height: 60rpx;
+  line-height: 60rpx;
+  text-align: center;
+  border-radius: 50rpx;
+  border: 1rpx solid rgb(227, 227, 227);
+  margin-right: 30rpx;
+}
+.choice_background {
+  background: #1C8FFA;
+  color: white;
+}
+
+.weui-textarea {
+  position: relative;
+  width: 100%;
+  height: 270rpx;
+  background: #f0f0f0;
+  border-radius: 20rpx;
+  margin-top: 15rpx;
+}
+.currentWordNumber {
+  position: absolute;
+  bottom: 24rpx;
+  right: 26rpx;
+  color: #888;
+}
+.van-button--primary {
+  border-radius: 100rpx !important;
+  width: 100% !important;
+  margin-top: 60rpx;
+}
+.van-cell {
+  padding-left: 0 !important;
+}

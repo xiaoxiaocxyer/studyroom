@@ -1,0 +1,119 @@
+<view class="section">
+  <view class="page-section swiper">
+    <swiper indicator-dots="{{indicatorDots}}" indicator-color="#ffffff" indicator-active-color="#1C8FFA" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" class="page-section-spacing">
+      <block wx:for="{{backgroundSwiper}}" wx:key="*this">
+        <swiper-item>
+          <van-image width="100%" height="100%" src="{{ item }}" />
+        </swiper-item>
+      </block>
+    </swiper>
+  </view>
+  <view class="centered name_title">
+    <view class="name">{{ roomName }}</view>
+    <view class="name_time">营业时间 {{roomTime}}</view>
+  </view>
+  <view class="floor centered">
+    <view>预定楼层</view>
+    <view class="reserve_floor">
+      <view class="layer_floor {{ floorIndex == index ? 'floorColor':'' }}" wx:for="{{ floor }}" wx:key="*this" data-index="{{index}}" data-id="{{ item.id }}"  bindtap="reserveFloor">
+        {{item.floor}}
+      </view>
+    </view>
+  </view>
+  <view class="centered scheduled">
+    <view class="mode">预定时间</view>
+    <view class="scheduled_time">
+      <view bindtap="showPopup" class="scheduled_stateTime">{{ stateTime }}</view>
+      <view>至</view>
+      <view bindtap="showPopupEnd" class="scheduled_stateTime">{{ endTime }}</view>
+    </view>
+  </view>
+  <view class="tips centered">
+    <text class="iconfont icon-zhuyishixiang_l" style="color: #009e6a;"></text>
+    <span>可提前365天预定，最长可预订365天</span>
+  </view>
+  <van-divider hairline />
+  <view class="centered tab">
+    <view class="self_study" wx:for="{{ room }}" wx:key="*this">
+      <view class="self_title" data-index="{{index}}" data-id="{{item.roomId}}"  data-item="{{item}}"  bindtap="reserveRoom">{{item.roomName}}</view>
+      <view class="self_icon {{ roomIndex == index ? 'self_back':'' }}"></view>
+    </view>
+  </view>
+  <view class="centered seat">
+    <view class="seat_icon" wx:for="{{ seatList }}" wx:key="*this">
+      <text class="iconfont icon-zuowei {{ seatIndex == index ? 'seat_no': item.roomState == '1' ? 'seat_green':'seat_off' }}" data-index="{{index}}" data-item="{{item}}" bindtap="handSeat"></text>
+      <view class="seat_text">{{ item.seatName }}</view>
+    </view>
+    <view class="seat_icon"></view>
+    <view class="seat_icon"></view>
+    <view class="seat_icon"></view>
+    <view class="seat_icon"></view>
+  </view>
+
+  <van-divider hairline />
+  <view class="centered tab">
+    <view class="self_study">
+      <view class="self_title">预约信息</view>
+      <view class="self_icon self_fill"></view>
+    </view>
+  </view>
+  <view class="fill_form">
+      <van-cell-group>
+          <van-field
+            value="{{ dataFrom.seatPhone }}"
+            placeholder="请输入电话"
+            border="{{ true }}"
+            bind:change="onChangePhone"
+            label="电话"
+          />
+        
+        <view style="margin-top: 15rpx;">
+          <van-field
+            value="{{ dataFrom.seatName }}"
+            placeholder="请输入姓名"
+            border="{{ true }}"
+            bind:change="onChangeName"
+            label="姓名"
+          />
+        </view>
+        <view style="margin-top: 15rpx;">
+          <van-field
+            value="{{ dataFrom.seatClass }}"
+            placeholder="请输入专业班级"
+            border="{{ true }}"
+            bind:change="onChangeMajor"
+            label="专业班级"
+          />
+        </view>
+      </van-cell-group>
+  </view>
+
+  <!-- 时间弹框 -->
+  <van-popup show="{{ show }}" position="bottom" custom-style="height: 60%;">
+    <van-datetime-picker type="date" value="{{ stateCurrentDate }}" min-date="{{ minDate }}" max-date="{{ maxDate }}" bind:confirm="onConfirm" bind:cancel="onClose" />
+  </van-popup>
+  <van-popup show="{{ flag }}" position="bottom" custom-style="height: 60%;">
+    <van-datetime-picker type="date" value="{{ endCurrentDate }}" min-date="{{ minDate }}" max-date="{{ maxDate }}" bind:confirm="onConfirmEnd" bind:cancel="onClose" />
+  </van-popup>
+  <view class="fill"></view>
+
+  <view class="footer">
+    <view class="footer_title">
+      <view class="title_tips">
+        <text>当前已选</text>
+        <span class="title_color blue"></span>
+      </view>
+      <view class="title_tips" style="padding-left: 60rpx;">
+        <text>空闲</text>
+        <span class="title_color white"></span>
+      </view>
+      <view class="title_tips" style="padding-left: 60rpx;">
+        <text>已有顾客</text>
+        <span class="title_color green"></span>
+      </view>
+    </view>
+    <view>
+      <van-button type="primary" color="#1C8FFA" block bindtap="regionCheck">立即预定</van-button>
+    </view>
+  </view>
+</view>

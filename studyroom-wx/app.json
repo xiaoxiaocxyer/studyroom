@@ -1,0 +1,46 @@
+{
+  "pages": [
+    "pages/home/index",
+    "pages/application/index",
+    "pages/backstage/index",
+    "pages/my/index",
+    "pages/login/index"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#1C8FFA",
+    "navigationBarTextStyle": "black"
+  },
+  "sitemapLocation": "sitemap.json",
+  "tabBar": {
+    "custom": true,
+    "list": [
+      {
+        "pagePath": "pages/home/index",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/application/index",
+        "text": "入座"
+      },
+      {
+        "pagePath": "pages/my/index",
+        "text": "我的"
+      }
+    ]
+  },
+  "subpackages": [
+    {
+      "root": "subpackages",
+      "pages": [
+        "pages/register/index",
+        "pages/region/index",
+        "pages/leave/index",
+        "pages/information/index",
+        "pages/message/index",
+        "pages/announce/index",
+        "pages/nameList/index"
+      ]
+    }
+  ]
+}

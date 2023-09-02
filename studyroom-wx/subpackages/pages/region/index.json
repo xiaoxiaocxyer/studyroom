@@ -1,0 +1,13 @@
+{
+  "usingComponents": {
+    "van-image": "/libs/vant-ui/image/index",
+    "van-datetime-picker": "/libs/vant-ui/datetime-picker/index",
+    "van-popup": "/libs/vant-ui/popup/index",
+    "van-divider": "/libs/vant-ui/divider/index",
+    "van-tab": "/libs/vant-ui/tab/index",
+    "van-tabs": "/libs/vant-ui/tabs/index",
+    "van-button": "/libs/vant-ui/button/index",
+    "van-field": "/libs/vant-ui/field/index"
+  },
+  "navigationBarTitleText": "预定"
+}

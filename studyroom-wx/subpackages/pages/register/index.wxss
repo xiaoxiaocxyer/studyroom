@@ -1,0 +1,99 @@
+@import "../../../static/ali-icon/index.wxss";
+.login-background-text {
+  height: 300rpx;
+  display: flex;
+  align-items: center;
+  padding-left: 30rpx;
+}
+.login-box {
+  width: 100%;
+}
+.outermost-layer {
+  padding: 0 50rpx 0 50rpx;
+}
+.user-login {
+  font-size: 60rpx;
+  font-weight: 600;
+  position: relative;
+  z-index: 9999;
+}
+.before {
+  width: 120rpx;
+  height: 15rpx;
+  background: #1c8ffa88;
+  position: absolute;
+  bottom: 7rpx;
+  left: 0;
+}
+.login-explain {
+  font-size: 30rpx;
+  color: #bbbbbb;
+}
+
+
+/* 注册表单 */
+.register-from {
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 100rpx;
+}
+.register-from-class {
+  position: relative;
+}
+.van-field__body {
+  height: 60rpx;
+}
+.register-button-code {
+  font-size: 25rpx;
+  color: rgb(0, 0, 0);
+  /* background: #1C8FFA; */
+}
+.register-button-code::after {
+  border: 0 solid #bfbfbf;
+}
+.register-from-icon {
+  position: absolute;
+  color: #666666;
+}
+.icon-shoujizhanghao-xian {
+  top: 34rpx;
+  left: 33rpx;
+}
+.icon-mima {
+  bottom: 37rpx;
+  left: 33rpx;
+}
+.icon-yanzhengyanzhengma {
+  top: 44%;
+  left: 33rpx;
+}
+.van-field__control {
+  font-size: 30rpx;
+}
+.icon-EyeInvisible, .icon-iconfontbukejian {
+  z-index: 99999;
+  bottom: 37rpx;
+  right: 33rpx;
+}
+
+/* 提示选项 */
+.tips-option {
+  height: 100rpx;
+  display: flex;
+  align-items: center;
+  padding-left: 30rpx;
+}
+.van-radio__label {
+  font-size: 25rpx;
+  color: #999999 !important;
+}
+
+/* 注册按钮 */
+.register-button {
+  margin: 0 auto;
+  width: 92%;
+  padding-top: 70rpx;
+}
+.van-button--primary {
+  border-radius: 100rpx !important;
+}

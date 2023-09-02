@@ -1,0 +1,33 @@
+<view class="section outermost-layer-tab">
+  <view class="function_type centered">
+    <view class="function_title">
+      <text class="iconfont icon-xinghao" style="color: #ff1818; font-size: 20rpx; margin-right: 10rpx;"></text>
+      请选择留言的类型
+    </view>
+    <view class="function_choice">
+      <view wx:for="{{ choiceList }}" wx:key="*this" class="choice_title {{ choiceIndex == index ? 'choice_background':'' }}" data-index="{{index}}" bindtap="handChoice">
+        {{ item.text }}
+      </view>
+    </view>
+  </view>
+
+  <view class="function_type centered">
+    <view class="function_title">
+      <text class="iconfont icon-xinghao" style="color: #ff1818; font-size: 20rpx; margin-right: 10rpx;"></text>
+      请填写的您的问题与意见
+    </view>
+    <view class="fill_in">
+      <textarea name="textarea" class="weui-textarea" minlength="{{min}}" maxlength="{{max}}" value="{{dataFrom.autograph}}" placeholder-class="phcolor" bindinput="inputeExplain" data-obj="dataFrom.autograph">
+        <text class="currentWordNumber">{{currentWordNumber|0}}/{{max}}</text>
+      </textarea>
+    </view>
+  </view>
+
+  <view class="function_type centered" style="padding-left: 35rpx;">
+   
+    <view>
+      <van-button type="primary" color="#1C8FFA" block bindtap="regionCheck">提 交</van-button>
+    </view>
+  </view>
+</view>
+  

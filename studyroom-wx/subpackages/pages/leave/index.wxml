@@ -1,0 +1,12 @@
+<view class="section outermost-layer-tab">
+  <view class="message centered userName">
+    <view class="userName_title">用户留言</view>
+    <view class="message_content" wx:for="{{messageList}}" wx:key="*this">
+      <view class="public">用户名称： <span style="color: #000000;">{{ item.username }}</span></view>
+      <view class="public">留言内容：<span style="color: #000000;">{{item.message}}</span></view>
+      <view class="public">
+        留言时间：<span style="color: #000000;">{{ item.messageTime }}</span>
+      </view>
+    </view>
+  </view>
+</view>

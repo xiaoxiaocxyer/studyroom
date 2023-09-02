@@ -1,0 +1,26 @@
+<view class="outermost-layer">
+  <view class="login-background-text">
+    <view class="login-box">
+      <view class="user-login">
+        注册
+        <view class="before"></view>
+      </view>
+      <view class="login-explain">
+        登录以使用更多服务
+      </view>
+    </view>
+  </view>
+
+  <view class="register-from">
+    <view class="register-from-class">
+      <van-cell-group >
+        <van-field value="{{ dataRegisterFrom.account }}" placeholder="手机号 / 账号" border="{{ true }}"  data-sign="account" bind:change="onChange"/>
+        <van-field value="{{ dataAccountFrom.password }}" placeholder="请输入密码" border="{{ true }}" data-sign="password" bind:change="onChange" type="password" />
+      </van-cell-group>
+    </view>
+    <view class="register-button">
+      <van-button type="primary" color="#1C8FFA" block bindtap="registration">注册</van-button>
+    </view>
+  </view>
+</view>
+  

@@ -1,0 +1,8 @@
+{
+  "usingComponents": {
+    "van-button": "/libs/vant-ui/button/index",
+    "van-field": "/libs/vant-ui/field/index",
+    "van-image": "/libs/vant-ui/image/index"
+  },
+  "navigationBarTitleText": "个人信息"
+}

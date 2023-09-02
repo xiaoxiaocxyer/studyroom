@@ -1,0 +1,17 @@
+<view class="section outermost-layer-tab">
+  <view class="userName centered">
+    <view class="userName_title">封禁用户</view>
+    <view class="userName_content">
+      <view class="blocked_users" wx:for="{{forbanList}}" wx:key="*this">
+        <view class="userName_portrait">
+          <image src="{{ item.userImg || 'https://s1.ax1x.com/2023/02/03/pSsaIPI.png'}}" class="img" />
+        </view>
+        <view>{{item.username}}</view>
+      </view>
+      <view class="seize"></view>
+      <view class="seize"></view>
+      <view class="seize"></view>
+      <view class="seize"></view>
+    </view>
+  </view>
+</view>

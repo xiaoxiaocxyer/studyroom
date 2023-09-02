@@ -1,0 +1,6 @@
+{
+  "component": true,
+  "usingComponents": {
+    "van-search": "/libs/vant-ui/search/index"
+  }
+}

@@ -1,0 +1,46 @@
+<view class="outermost-layer-tab">
+  <!-- <view class="centered header_title">预约信息</view> -->
+  <van-empty description="暂无预约" wx:if="{{ makeFlag }}"/>
+  <view class="centered make" wx:else>
+    <view class="make_centered" wx:for="{{ dataList }}" wx:key="*this">
+        <view class="make_hader">
+          <span style="color: #1C8FFA; font-size: 24rpx;">
+            {{ item.seatState == '1' ? '未审核' : item.seatState == '0' ? '审核通过' : '审核未通过' }}
+          </span>
+        </view>
+        <view class="make_section">
+          <view class="make_fromName">
+            <span>姓名：</span>
+            <span style="color: #9b9b9b;">{{item.seatName}}</span>
+          </view>
+          <view class="make_fromPhone">
+            <span>电话：</span>
+            <span style="color: #9b9b9b;">{{item.seatPhone}}</span>
+          </view>
+          <view class="make_fromClass">
+            <span>专业班级：</span>
+            <span style="color: #9b9b9b;">{{item.seatClass}}</span>
+          </view>
+          <view class="make_fromPhone">
+            <span>预约位置：</span>
+            <span class="make_tag city">{{item.floor}}</span>
+            <span class="make_tag room">{{item.roomName}}</span>
+            <span class="make_tag seat">{{item.sname}}座</span>
+          </view>
+          <view class="make_fromTime">
+            <span style="color: #ff9898;">Time：</span>
+            <span style="color: #9b9b9b;">{{item.seatDay}}</span>
+          </view>
+          <view class="make_item">
+            <span bindtap="onApply" data-item="{{ item }}">
+              {{ item.seatState == '1' ? '取消预约' : item.seatState == '0' ? '结束学习' : '取消预约' }}
+            </span>
+          </view>
+        </view>
+    </view>
+  </view>
+  <view class="cancel">
+    <van-dialog id="van-dialog" />
+  </view>
+</view>
+  

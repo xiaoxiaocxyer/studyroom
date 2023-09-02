@@ -1,0 +1,9 @@
+<view class="section outermost-layer-tab">
+  <view class="header centered" wx:for="{{dataList}}" wx:key="*this">
+    <view class="header_title">{{ item.noticeTitle }}</view>
+    <view class="header_content">
+      {{ item.noticeContent }}
+      <span class="header_time">{{item.createTime}}</span>
+    </view>
+  </view>
+</view>

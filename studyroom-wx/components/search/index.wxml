@@ -1,0 +1,10 @@
+<view>
+    <van-search
+      value="{{ value }}"
+      placeholder="请输入要搜索的"
+      shape="round"
+      background="##FFFFFF00"
+      bind:search="onSearch"
+    />
+</view>
+  

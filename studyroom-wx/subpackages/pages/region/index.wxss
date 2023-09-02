@@ -1,0 +1,213 @@
+@import "../../../static/ali-icon/index.wxss";
+.section {
+  width: 100%;
+  height: 100%;
+  /* padding-bottom: 300rpx; */
+}
+/* 轮播 */
+.page-section {
+  height: 500rpx;
+}
+.page-section-spacing {
+  height: 500rpx;
+}
+.van-image__img {
+  width: 100%;
+}/* subpackages/pages/region/index.wxss */
+
+/* 名称、营业时间 */
+.name_title {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 80rpx;
+  line-height: 80rpx;
+}
+.name {
+  font-size: 40rpx;
+  font-weight: 600;
+}
+.name_time {
+  font-size: 26rpx;
+  color: #808080;
+}
+/* 楼层选择 */
+.floor {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 80rpx;
+}
+.reserve_floor {
+  display: flex;
+  flex-direction: row;
+  margin-left: 20rpx;
+  width: 70%;
+}
+.layer_floor {
+  width: 15%;
+  height: 40rpx;
+  text-align: center;
+  line-height: 40rpx;
+  font-size: 26rpx;
+  padding: 10rpx 10rpx 10rpx 10rpx;
+  border-radius: 20rpx;
+  border: 1rpx solid #1C8FFA;
+  margin-right: 20rpx;
+}
+.floorColor {
+  color: white;
+  background: #1C8FFA;
+}
+
+/* 预定时间 */
+.scheduled {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 80rpx;
+}
+.scheduled_time {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 57%;
+  margin-left: 20rpx;
+}
+.scheduled_stateTime {
+  height: 40rpx;
+  line-height: 40rpx;
+  font-size: 26rpx;
+  padding: 10rpx 10rpx 10rpx 10rpx;
+  border-radius: 20rpx;
+  border: 1rpx solid #1C8FFA;
+}
+
+/* 注意 */
+.tips {
+  font-size: 24rpx;
+  height: 50rpx;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.choice {
+  color: #ff2919;
+}
+.iconfont {
+  font-size: 30rpx;
+  margin-right: 5rpx;
+  /* margin-top: 1rpx; */
+}
+
+/* tab */
+.tab {
+  margin-top: -20rpx;
+  display: flex;
+  flex-direction: row;
+  overflow: auto;
+}
+.self_study {
+  text-align: center;
+  margin-right: 40rpx;
+}
+.self_icon {
+  width: 150rpx;
+  height: 5rpx;
+  margin: 0 auto;
+}
+.self_title {
+  margin-bottom: 10rpx;
+  font-weight: 600;
+}
+.self_back {
+  background: #1C8FFA;
+}
+.seat {
+  padding-top: 30rpx;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.seat_icon {
+  width: 23%;
+  text-align: center;
+  margin-top: 30rpx;
+}
+.seat_text {
+  font-size: 25rpx;
+}
+.seat_no {
+  color: #1C8FFA;
+}
+.seat_green {
+  color: #0be000;
+}
+.seat_off {
+  color: #cfcfcf;
+}
+.icon-zuowei {
+  font-size: 65rpx;
+  /* color: #cfcfcf; */
+}
+
+/* 预定按钮 */
+.footer {
+  z-index: 9999;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  padding-bottom: 40rpx;
+  background: #ffffff;
+}
+.footer_title {
+  padding-left: 10rpx;
+  width: 100%;
+  height: 80rpx;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.title_tips {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-size: 26rpx;
+}
+.title_color {
+  display: inline-block;
+  width: 30rpx;
+  height: 30rpx;
+  margin-left: 10rpx;
+  border-radius: 8rpx;
+}
+.blue {
+  background: #1C8FFA;
+}
+.white {
+  background: #cfcfcf;
+}
+.green {
+  background: #0be000;
+}
+.van-button--primary {
+  border-radius: 100rpx !important;
+  width: 75% !important;
+} 
+.fill {
+  width: 100%;
+  height: 220rpx;
+}
+/* 预约信息 */
+.self_fill {
+  width: 120rpx;
+  height: 5rpx;
+  margin: 0 auto;
+  background: #1C8FFA;
+}
+.fill_form {
+  padding: 0rpx 35rpx 20rpx 35rpx;
+}

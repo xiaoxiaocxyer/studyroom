@@ -1,0 +1,16 @@
+{
+  "name": "guest-applets-code-warehouse",
+  "version": "1.0.0",
+  "main": ".eslintrc.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@vant/weapp": "^1.10.11"
+  },
+  "devDependencies": {},
+  "description": ""
+}

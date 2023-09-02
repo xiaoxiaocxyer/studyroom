@@ -1,0 +1,8 @@
+{
+  "usingComponents": {
+    "van-button": "/libs/vant-ui/button/index",
+    "van-field": "/libs/vant-ui/field/index",
+    "van-radio": "/libs/vant-ui/radio/index",
+    "van-radio-group": "/libs/vant-ui/radio-group/index"
+  }
+}
