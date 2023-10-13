@@ -15,7 +15,7 @@
 <img src="./images/gn.png" width="600" height="450" /><br>
 
 ## 技术服务
-<img src="./images/my.jpg" width="200" height="200" />
+<img src="./images/my.jpg" width="200" height="260" />
 
 ## 系统图片
 #### 1.小程序首页
