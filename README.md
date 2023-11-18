@@ -11,6 +11,9 @@
 在本系统中，用户可以在小程序端进行自习室座位预约，管理员可以在后台管理端进行审核等操作。<br>
 该系统功能完善，界面美观，非常适合作为毕设或者课程作业以及新手开发学习。<br>
 
+## 视频介绍
+<a href="https://www.bilibili.com/video/BV1Ju411F7zH/?spm_id_from=333.999.0.0" target="_blank">点击查看B站视频介绍</a>
+
 ## 功能介绍
 <img src="./images/gn.png" width="600" height="450" /><br>
 
